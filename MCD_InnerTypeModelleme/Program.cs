@@ -40,9 +40,16 @@ namespace MCD_InnerTypeModelleme
                 fiyat = 1500
             };
 
-            foreach (var item in )
+            M1.musteriSiparisBilgileri[0].urunler[1] = new Urun()
             {
+                urunId = 2,
+                Tanim = "Tablet",
+                fiyat = 1000
+            };
 
+            foreach (Urun item in M1.musteriSiparisBilgileri[0].urunler)
+            {
+                Console.WriteLine("Ürün id :" + item.urunId + "\tÜrün tanımı :" + item.Tanim + "\tÜrün fiyatı :" + item.fiyat);
             }
         }
     }
